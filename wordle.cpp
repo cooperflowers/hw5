@@ -108,9 +108,9 @@ bool floatCheck(const std::string& word, int wid, const std::string& remaining){
             std::string next = remaining;               //copy remaining
             next.erase(j, 1);              
 
-            return floatCheck(word, wid + 1, next);     //recurse to check next character
+            return floatCheck(word, wid + 1, next);     //recurse to check next characters
         }
     }
-    
+
     return floatCheck(word, wid + 1, remaining);
 }

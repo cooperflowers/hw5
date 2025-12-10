@@ -123,5 +123,5 @@ bool help(const AvailabilityMatrix& avail, const size_t dailyNeed, const size_t 
     }
 
     
-    return false;               //no worker can create a valid schedule
+    return false;               //no worker can create a valid schedules
 }
