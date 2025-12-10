@@ -13,13 +13,8 @@ using namespace std;
 
 
 // Add prototypes of helper functions here
-
-
-
 bool fixCheck(const std::string& word, const std::string& in, int wid);       //check matching fixed letters
 bool floatCheck(const std::string& word, int wid, const std::string& remaining);   //check if all floating letters appear //after fix check
-
-
 
 // Definition of primary wordle function
 std::set<std::string> wordle(
@@ -28,7 +23,6 @@ std::set<std::string> wordle(
     const std::set<std::string>& dict)
 {
     // Add your code here
-
     std::set<std::string> valid;         // set of all valid words
 
     
@@ -67,8 +61,6 @@ std::set<std::string> wordle(
 
     return valid;
 
-
-    
 }
 
 // Define any helper functions here
@@ -114,3 +106,4 @@ bool floatCheck(const std::string& word, int wid, const std::string& remaining){
 
     return floatCheck(word, wid + 1, remaining);
 }
+

@@ -16,15 +16,10 @@ using namespace std;
 
 
 
-
 // Add prototypes for any helper functions here
-
 
 // be recursive, fill the schedule slots // have current day, id for how many needed filled, each workers' shift count
 bool help(const AvailabilityMatrix& avail, const size_t dailyNeed, const size_t maxShifts, DailySchedule& sched, std::vector<size_t>& shiftCount, size_t current, size_t id);
-
-
-
 
 
 // Add your implementation of schedule() and other helper functions here
@@ -41,8 +36,7 @@ bool schedule(
     }
     sched.clear();
     // Add your code below
-
-
+    
 
     const size_t n = avail.size();          //number of days
     const size_t k = avail[0].size();       //number of workers
@@ -125,3 +119,4 @@ bool help(const AvailabilityMatrix& avail, const size_t dailyNeed, const size_t 
     
     return false;               //no worker can create a valid schedules
 }
+
